@@ -4,10 +4,10 @@ package spring.annotation.Coach;
 import org.springframework.stereotype.Component;
 
 
-@Component("thatSillyCoach")
+@Component
 public class TennisCoach implements CoachInterface{
 	public TennisCoach() {
-		// TODO Auto-generated constructor stub
+		System.out.println("no-arg-constructor");
 	}
 	
 	@Override
