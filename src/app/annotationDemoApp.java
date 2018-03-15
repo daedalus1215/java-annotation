@@ -15,7 +15,10 @@ public class annotationDemoApp {
 		CoachInterface mSillyCoach = context.getBean("tennisCoach", CoachInterface.class);
 		
 		// call a method on the bean
-		mSillyCoach.getDailyWorkout();
+		mSillyCoach.displayDailyWorkout();
+		
+		mSillyCoach.displayDailyFortune();
+		
 		// close the context
 		context.close();
 	}

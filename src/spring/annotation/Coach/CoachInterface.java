@@ -2,5 +2,7 @@ package spring.annotation.Coach;
 
 public interface CoachInterface {
 
-	public void getDailyWorkout();
+	public void displayDailyWorkout();
+	
+	public void displayDailyFortune();
 }
