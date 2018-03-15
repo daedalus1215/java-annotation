@@ -2,6 +2,7 @@ package spring.annotation.Coach;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import spring.annotation.Fortune.FortuneServiceInterface;
@@ -11,6 +12,7 @@ import spring.annotation.Fortune.FortuneServiceInterface;
 public class TennisCoach implements CoachInterface {
 	
 	@Autowired
+	@Qualifier("fortuneService")
 	private FortuneServiceInterface fortuneService;
 	
 	
