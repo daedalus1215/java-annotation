@@ -11,10 +11,10 @@ import spring.annotation.Fortune.FortuneServiceInterface;
 public class TennisCoach implements CoachInterface {
 	
 	private FortuneServiceInterface fortuneService;
-	
+
 	@Autowired
-	public TennisCoach(FortuneServiceInterface theFortuneService) {
-		this.fortuneService = theFortuneService;
+	public void setFortuneService(FortuneServiceInterface fortuneService) {
+		this.fortuneService = fortuneService;
 	}
 	
 	@Override
