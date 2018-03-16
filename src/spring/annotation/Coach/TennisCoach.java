@@ -9,8 +9,8 @@ import spring.annotation.Fortune.FortuneServiceInterface;
 
 
 @Component
+@Scope("prototype")
 public class TennisCoach implements CoachInterface {
-	
 	@Autowired
 	@Qualifier("randomFortuneService")
 	private FortuneServiceInterface fortuneService;
