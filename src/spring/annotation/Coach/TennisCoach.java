@@ -12,7 +12,7 @@ import spring.annotation.Fortune.FortuneServiceInterface;
 public class TennisCoach implements CoachInterface {
 	
 	@Autowired
-	@Qualifier("fortuneService")
+	@Qualifier("randomFortuneService")
 	private FortuneServiceInterface fortuneService;
 	
 	
