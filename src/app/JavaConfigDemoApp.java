@@ -14,25 +14,14 @@ public class JavaConfigDemoApp {
 				new AnnotationConfigApplicationContext(SportConfig.class);
 		
 		// get the bean from spring container
-		CoachInterface mSillyCoach = context.getBean("tennisCoach", CoachInterface.class);
-		
-		CoachInterface mSillyCoachSecond = context.getBean("tennisCoach", CoachInterface.class);
+		CoachInterface mSillyCoach = context.getBean("swimCoach", CoachInterface.class);
 		
 		// call a method on the bean
 		mSillyCoach.displayDailyWorkout();
 		
 		mSillyCoach.displayDailyFortune();
-		
-		mSillyCoachSecond.displayDailyFortune();
-		
-		mSillyCoachSecond.displayDailyFortune();
-		
-		boolean result = (mSillyCoach == mSillyCoachSecond);
-		
-		System.out.println("\nPointing to the same object: " + result);
-		
+				
 		System.out.println("\nMemory location for mSillyCoach: " + mSillyCoach);
-		System.out.println("\nMemory location for mSillyCoachSecond: " + mSillyCoachSecond);
 
 		// close the context
 		context.close();
